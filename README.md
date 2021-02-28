@@ -83,19 +83,19 @@ The unit tests will be listed here.
 
 ### Choose Categories
 
-Plant trees to make your snow leopard happy about their habitat.
+Choose from a variety of categories to trivia.
 
 ### Timed Awnsers
 
-Change the temperature of the environment to counter climate change.
+Choose the correct awnser before the timer runs out.
 
 ### Leaderboard
 
-Feed your snow leopard his favourite snack, marmots.
+View the leaderboard to see the amount of points you and your friends earned.
 
 ### Win or Lose
 
-Catch the poachers before they harm your snow leopard.
+See who won and who lost the trivia.
 
 <!-- CONTRIBUTING -->
 ## Contributing
