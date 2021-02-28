@@ -11,7 +11,7 @@
 </br>
    
   <a href="https://github.com/dylandasilva1999/zap-quiz-app ">
-    <img src="Images/AppIcon.png" alt="Logo" width="140" height="140">
+    <img src="Images/App Icon.png" alt="Logo" width="140" height="140">
   </a>
   
   <h3 align="center">Zap!</h3>
