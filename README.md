@@ -1,10 +1,10 @@
 <!-- PROJECT LOGO -->
 <br />
 
-![GitHub repo size](https://img.shields.io/github/repo-size/dylandasilva1999/zap-quiz-app?color=%23191818)
-![GitHub watchers](https://img.shields.io/github/watchers/dylandasilva1999/zap-quiz-app?color=%23191818)
-![GitHub language count](https://img.shields.io/github/languages/count/dylandasilva1999/zap-quiz-app?color=%23191818)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dylandasilva1999/zap-quiz-app?color=%23191818)
+![GitHub repo size](https://img.shields.io/github/repo-size/dylandasilva1999/zap-quiz-app?color=%23e61e25)
+![GitHub watchers](https://img.shields.io/github/watchers/dylandasilva1999/zap-quiz-app?color=%23e61e25)
+![GitHub language count](https://img.shields.io/github/languages/count/dylandasilva1999/zap-quiz-app?color=%23e61e25)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dylandasilva1999/zap-quiz-app?color=%23e61e25)
 
 <h6 align="center">Dylan da Silva Android 301</h6>
 <p align="center">
