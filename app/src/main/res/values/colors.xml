@@ -5,4 +5,7 @@
     <color name="yellow">#FFA300</color>
     <color name="dark_grey">#131313</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="mtrl_textinput_default_box_stroke_color">@color/red</color>
+
 </resources>
