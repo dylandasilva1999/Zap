@@ -25,6 +25,7 @@
         android:layout_height="wrap_content"
         android:alpha="0.0"
         android:text="@string/zap"
+        android:fontFamily="@font/brandon_grotesque_bold_webfont"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
         android:textColor="@color/white"
         android:textStyle="bold"
