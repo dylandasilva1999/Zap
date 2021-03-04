@@ -75,7 +75,7 @@
                         android:hint="Enter Your Name"
                         android:textColor="@color/dark_grey"
                         android:fontFamily="@font/proxima_nova_regular"
-                        android:textColorHint="@color/red" />
+                        android:textColorHint="@color/white" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
