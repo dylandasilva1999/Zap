@@ -18,17 +18,25 @@
            <KeyAttribute
                motion:motionTarget="@+id/logoImageView"
                motion:framePosition="40"
-               android:translationY="-90dp"
-               android:scaleX="0.8"
-               android:scaleY="0.8" />
+               android:translationY="-70dp"
+               android:scaleX="0.9"
+               android:scaleY="0.9" />
            <KeyAttribute
                motion:motionTarget="@+id/appTitleTextView"
                motion:framePosition="40"
                android:alpha="0.0" />
            <KeyAttribute
                motion:motionTarget="@+id/appTitleTextView"
-               motion:framePosition="55"
-               android:alpha="1.0" />
+               motion:framePosition="42"
+               android:alpha="0.0" />
+           <KeyAttribute
+               motion:motionTarget="@+id/appTitleTextView"
+               motion:framePosition="47"
+               android:alpha="0.0" />
+           <KeyAttribute
+               motion:motionTarget="@+id/appTitleTextView"
+               motion:framePosition="60"
+               android:alpha="0.0" />
        </KeyFrameSet>
     </Transition>
 
@@ -45,7 +53,7 @@
             android:alpha="1.0"
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
-            android:translationY="50dp" />
+            android:translationY="35dp" />
         <Constraint
             android:id="@+id/logoImageView"
             motion:layout_constraintEnd_toEndOf="parent"
