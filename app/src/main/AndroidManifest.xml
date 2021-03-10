@@ -9,26 +9,31 @@
         android:roundIcon="@drawable/app_icon_complete"
         android:supportsRtl="true"
         android:theme="@style/NoActionBarTheme">
-
-        <activity android:name=".SplashActivity"
-            android:theme="@style/SplashTheme"
+        <activity android:name=".ComicsQuizActivity"></activity>
+        <activity android:name=".MoviesQuizActivity" />
+        <activity android:name=".HistoryQuizActivity" />
+        <activity android:name=".GeneralQuizActivity" />
+        <activity
+            android:name=".DashboardActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustUnspecified"
-            android:isScrollContainer="true">
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".SplashActivity"
+            android:isScrollContainer="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme"
+            android:windowSoftInputMode="adjustUnspecified">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MainActivity"
+            android:isScrollContainer="true"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustUnspecified"
-            android:isScrollContainer="true">
-        </activity>
-
+            android:windowSoftInputMode="adjustUnspecified" />
     </application>
 
 </manifest>
