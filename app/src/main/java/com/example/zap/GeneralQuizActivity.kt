@@ -6,9 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.widget.ImageView
-import android.widget.ProgressBar
-import android.widget.TextView
+import android.widget.*
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 
@@ -34,19 +32,29 @@ class GeneralQuizActivity : AppCompatActivity(), View.OnClickListener {
         var tv_general_option_one = findViewById<TextView>(R.id.tv_general_option_one)
         var tv_general_option_two = findViewById<TextView>(R.id.tv_general_option_two)
         var tv_general_option_three = findViewById<TextView>(R.id.tv_general_option_three)
+        var btn_are_you_correct = findViewById<Button>(R.id.btn_are_you_correct)
 
         tv_general_option_one.setOnClickListener(this)
         tv_general_option_two.setOnClickListener(this)
         tv_general_option_three.setOnClickListener(this)
+        btn_are_you_correct.setOnClickListener(this)
 
     }
 
     private fun setGeneralQuestion() {
 
-        mCurrentPosition = 1
+        var checkIfSelected = 1
         val generalQuestion = mGeneralQuestionsList!![mCurrentPosition-1]
 
         defaultOptionsView()
+
+        var btn_are_you_correct = findViewById<Button>(R.id.btn_are_you_correct)
+
+        if (mCurrentPosition == mGeneralQuestionsList!!.size) {
+            btn_are_you_correct.text = "Finish"
+        } else {
+            btn_are_you_correct.text = "Is it correct?"
+        }
 
         //Get General Question Items
         var general_progressbar = findViewById<ProgressBar>(R.id.general_progressbar)
@@ -97,6 +105,7 @@ class GeneralQuizActivity : AppCompatActivity(), View.OnClickListener {
         var tv_general_option_one = findViewById<TextView>(R.id.tv_general_option_one)
         var tv_general_option_two = findViewById<TextView>(R.id.tv_general_option_two)
         var tv_general_option_three = findViewById<TextView>(R.id.tv_general_option_three)
+        var btn_are_you_correct = findViewById<Button>(R.id.btn_are_you_correct)
 
         when(v?.id) {
             R.id.tv_general_option_one ->{
@@ -107,6 +116,58 @@ class GeneralQuizActivity : AppCompatActivity(), View.OnClickListener {
             }
             R.id.tv_general_option_three ->{
                 selectedOptionsView(tv_general_option_three, 3)
+            }
+            R.id.btn_are_you_correct ->{
+                if(mSelectedOptionPosition == 0) {
+                    mCurrentPosition ++
+
+                    when{
+                        mCurrentPosition <= mGeneralQuestionsList!!.size -> {
+                            setGeneralQuestion()
+                        } else -> {
+                            Toast.makeText(this, "You have finished the Quiz!", Toast.LENGTH_SHORT).show()
+                        }
+                    }
+                } else {
+                    val question = mGeneralQuestionsList?.get(mCurrentPosition - 1)
+                    if (question!!.correctAnswer != mSelectedOptionPosition) {
+                        answerView(mSelectedOptionPosition, R.drawable.wrong_selected_option_style)
+                    } else {
+                        answerView(question.correctAnswer, R.drawable.correct_selected_option_style)
+                    }
+
+                    if (mCurrentPosition == mGeneralQuestionsList!!.size) {
+                        btn_are_you_correct.text = "Finish"
+                    } else {
+                        btn_are_you_correct.text = "Next Question"
+                    }
+                    mSelectedOptionPosition = 0
+                }
+            }
+        }
+    }
+
+    private fun answerView(answer: Int, drawableView: Int) {
+
+        var tv_general_option_one = findViewById<TextView>(R.id.tv_general_option_one)
+        var tv_general_option_two = findViewById<TextView>(R.id.tv_general_option_two)
+        var tv_general_option_three = findViewById<TextView>(R.id.tv_general_option_three)
+
+        when(answer) {
+            1 -> {
+                tv_general_option_one.background = ContextCompat.getDrawable(
+                        this, drawableView
+                )
+            }
+            2 -> {
+                tv_general_option_two.background = ContextCompat.getDrawable(
+                        this, drawableView
+                )
+            }
+            3 -> {
+                tv_general_option_three.background = ContextCompat.getDrawable(
+                        this, drawableView
+                )
             }
         }
     }
