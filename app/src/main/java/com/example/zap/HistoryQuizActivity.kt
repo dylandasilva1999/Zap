@@ -7,5 +7,7 @@ class HistoryQuizActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_history_quiz)
+
+
     }
 }

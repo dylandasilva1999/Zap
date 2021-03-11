@@ -38,6 +38,110 @@ object Constants {
             1)
         generalQuestionsList.add(genQuestion4)
 
+        val genQuestion5 = Question(5, "Who is the archenemy of Aquaman?", "General",
+                R.drawable.general_category_image,
+                "Lex Luthor",
+                "Black Manta",
+                "Shark",
+                2)
+        generalQuestionsList.add(genQuestion5)
+
+        val genQuestion6 = Question(6, "How did Spiderman have his superpowers?", "General",
+                R.drawable.general_category_image,
+                "Born with it",
+                "Cosmic Rays",
+                "Radioactive Spider",
+                3)
+        generalQuestionsList.add(genQuestion6)
+
+        val genQuestion7 = Question(7, "The Green Lantern gains his power from which object?", "General",
+                R.drawable.general_category_image,
+                "A ring",
+                "A necklace",
+                "Glasses",
+                1)
+        generalQuestionsList.add(genQuestion7)
+
+        val genQuestion8 = Question(8, "What villain got his distinctive appearance from toxic chemicals at a plant?", "General",
+                R.drawable.general_category_image,
+                "The Joker",
+                "Two-Face",
+                "Doomsday",
+                1)
+        generalQuestionsList.add(genQuestion8)
+
         return generalQuestionsList
     }
+
+    //General Questions
+    fun historyQuestions(): ArrayList<Question> {
+        val historyQuestionsList = ArrayList<Question>()
+
+        val hisQuestion1 = Question(1, "What was the first colour the Hulk would have been?", "History",
+                R.drawable.history_category_image,
+                "Black",
+                "Grey",
+                "Red",
+                2)
+        historyQuestionsList.add(hisQuestion1)
+
+        val hisQuestion2 = Question(2, "Which superhero was supposed to be bald in his debut?", "History",
+                R.drawable.history_category_image,
+                "Professor X",
+                "Apocalypse",
+                "Superman",
+                3)
+        historyQuestionsList.add(hisQuestion2)
+
+        val hisQuestion3 = Question(3, "Who was the first superhero created in the history of superheroes?", "History",
+                R.drawable.history_category_image,
+                "The Phantom",
+                "The Comet",
+                "Superman",
+                1)
+        historyQuestionsList.add(hisQuestion3)
+
+        val hisQuestion4 = Question(4, "What is the original age of the Black Widow?", "History",
+                R.drawable.history_category_image,
+                "48 Years",
+                "54 Years",
+                "70 Years",
+                3)
+        historyQuestionsList.add(hisQuestion4)
+
+        val hisQuestion5 = Question(5, "6 Who made Captain America’s shield?", "History",
+                R.drawable.history_category_image,
+                "United States Army",
+                "Howard Stark",
+                "Roosevelt",
+                2)
+        historyQuestionsList.add(hisQuestion5)
+
+        val hisQuestion6 = Question(6, "What was the originally proposed shape of Captain America’s shield?", "History",
+                R.drawable.history_category_image,
+                "Pavise-shaped",
+                "Kite-shaped",
+                "Herladic-shaped",
+                3)
+        historyQuestionsList.add(hisQuestion6)
+
+        val hisQuestion7 = Question(7, "Who is this superhero who first appeared in the Marvel universe in 1962?", "History",
+                R.drawable.history_category_image,
+                "The Hulk",
+                "The Abomination",
+                "Mr.Sinister",
+                1)
+        historyQuestionsList.add(hisQuestion7)
+
+        val hisQuestion8 = Question(8, "In which back-to-back years did Superman and Batman debut?", "History",
+                R.drawable.history_category_image,
+                "1942 and 1943",
+                "1938 and 1939",
+                "1953 and 1954",
+                2)
+        historyQuestionsList.add(hisQuestion8)
+
+        return historyQuestionsList
+    }
+
 }
