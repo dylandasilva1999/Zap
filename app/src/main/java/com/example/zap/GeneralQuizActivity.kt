@@ -1,5 +1,6 @@
 package com.example.zap
 
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
@@ -15,6 +16,8 @@ class GeneralQuizActivity : AppCompatActivity(), View.OnClickListener {
     private var mCurrentPosition: Int = 1
     private var mGeneralQuestionsList: ArrayList<Question>? = null
     private var mSelectedOptionPosition: Int = 0
+    private var mCorrectOptions: Int = 0
+    private var mUsername: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,6 +25,8 @@ class GeneralQuizActivity : AppCompatActivity(), View.OnClickListener {
 
         //Make the View FullScreen
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
+
+        mUsername = intent.getStringExtra(Constants.USERNAME)
 
         //Get the General Questions List
         mGeneralQuestionsList = Constants.generalQuestions()
@@ -43,7 +48,6 @@ class GeneralQuizActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun setGeneralQuestion() {
 
-        var checkIfSelected = 1
         val generalQuestion = mGeneralQuestionsList!![mCurrentPosition-1]
 
         defaultOptionsView()
@@ -121,20 +125,27 @@ class GeneralQuizActivity : AppCompatActivity(), View.OnClickListener {
                 if(mSelectedOptionPosition == 0) {
                     mCurrentPosition ++
 
-                    when{
+                    when {
                         mCurrentPosition <= mGeneralQuestionsList!!.size -> {
                             setGeneralQuestion()
-                        } else -> {
-                            Toast.makeText(this, "You have finished the Quiz!", Toast.LENGTH_SHORT).show()
+                        }
+                        else -> {
+                            val intent = Intent(this, ResultActivity::class.java)
+                            intent.putExtra(Constants.USERNAME, mUsername)
+                            intent.putExtra(Constants.CORRECT_ANSWERS, mCorrectOptions)
+                            intent.putExtra(Constants.QUESTIONS_TOTAL, mGeneralQuestionsList!!.size)
+                            startActivity(intent)
                         }
                     }
                 } else {
                     val question = mGeneralQuestionsList?.get(mCurrentPosition - 1)
+
                     if (question!!.correctAnswer != mSelectedOptionPosition) {
                         answerView(mSelectedOptionPosition, R.drawable.wrong_selected_option_style)
                     } else {
-                        answerView(question.correctAnswer, R.drawable.correct_selected_option_style)
+                        mCorrectOptions++
                     }
+                    answerView(question.correctAnswer, R.drawable.correct_selected_option_style)
 
                     if (mCurrentPosition == mGeneralQuestionsList!!.size) {
                         btn_are_you_correct.text = "Finish"

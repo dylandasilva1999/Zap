@@ -1,6 +1,13 @@
 package com.example.zap
 
+import java.util.*
+import kotlin.collections.ArrayList
+
 object Constants {
+
+    const val USERNAME: String = "user_name"
+    const val QUESTIONS_TOTAL: String = "questions_total"
+    const val CORRECT_ANSWERS: String = "correct_answers"
 
     //General Questions
     fun generalQuestions(): ArrayList<Question> {
@@ -70,10 +77,11 @@ object Constants {
                 1)
         generalQuestionsList.add(genQuestion8)
 
+        Collections.shuffle(generalQuestionsList)
         return generalQuestionsList
     }
 
-    //General Questions
+    //History Questions
     fun historyQuestions(): ArrayList<Question> {
         val historyQuestionsList = ArrayList<Question>()
 
@@ -141,6 +149,7 @@ object Constants {
                 2)
         historyQuestionsList.add(hisQuestion8)
 
+        Collections.shuffle(historyQuestionsList)
         return historyQuestionsList
     }
 

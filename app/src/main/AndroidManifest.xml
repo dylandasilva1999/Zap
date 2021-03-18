@@ -9,7 +9,11 @@
         android:roundIcon="@drawable/app_icon_complete"
         android:supportsRtl="true"
         android:theme="@style/NoActionBarTheme">
-        <activity android:name=".ComicsQuizActivity"></activity>
+        <activity android:name=".ResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarTheme">
+        </activity>
+        <activity android:name=".ComicsQuizActivity" />
         <activity android:name=".MoviesQuizActivity" />
         <activity android:name=".HistoryQuizActivity" />
         <activity android:name=".GeneralQuizActivity" />

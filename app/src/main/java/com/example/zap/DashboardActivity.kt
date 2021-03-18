@@ -21,6 +21,7 @@ class DashboardActivity : AppCompatActivity() {
 
         //Get the Intent with the name from Activity Main
         val userName = intent.getStringExtra(EXTRA_MESSAGE)
+        val et_name = findViewById<TextView>(R.id.et_name)
 
         //Set the Greeting Text
         tv_greeting.text = userName
@@ -34,24 +35,28 @@ class DashboardActivity : AppCompatActivity() {
         //General Category OnClickListener
         general_category.setOnClickListener{
             val intent = Intent(this, GeneralQuizActivity::class.java)
+            intent.putExtra(Constants.USERNAME, tv_greeting.text.toString())
             startActivity(intent);
         }
 
         //History Category OnClickListener
         history_category.setOnClickListener{
             val intent = Intent(this, HistoryQuizActivity::class.java)
+            intent.putExtra(Constants.USERNAME, tv_greeting.text.toString())
             startActivity(intent);
         }
 
         //Movies Category OnClickListener
         movies_category.setOnClickListener{
             val intent = Intent(this, MoviesQuizActivity::class.java)
+            intent.putExtra(Constants.USERNAME, tv_greeting.text.toString())
             startActivity(intent);
         }
 
         //Comics Category OnClickListener
         comics_category.setOnClickListener{
             val intent = Intent(this, ComicsQuizActivity::class.java)
+            intent.putExtra(Constants.USERNAME, tv_greeting.text.toString())
             startActivity(intent);
         }
 
