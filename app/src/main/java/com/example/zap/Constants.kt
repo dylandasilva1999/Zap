@@ -153,4 +153,148 @@ object Constants {
         return historyQuestionsList
     }
 
+    //Movies Questions
+    fun moviesQuestions(): ArrayList<Question> {
+        val moviesQuestionsList = ArrayList<Question>()
+
+        val movQuestion1 = Question(1, "Iron Man Tony Stark's loyal assistant goes by what name?", "Movies",
+            R.drawable.movies_category_image,
+            "Jarvis",
+            "Pepper Lots",
+            "Pepper Pots",
+            3)
+        moviesQuestionsList.add(movQuestion1)
+
+        val movQuestion2 = Question(2, "What relation are Sue and Johnny in Fantastic Four?", "Movies",
+            R.drawable.movies_category_image,
+            "Brother and Sister",
+            "Aunt and Uncle",
+            "Cousin and Nephew",
+            1)
+        moviesQuestionsList.add(movQuestion2)
+
+        val movQuestion3 = Question(3, "In which 2000 movie did James Marsden play the character Cyclops?", "Movies",
+            R.drawable.movies_category_image,
+            "Superman",
+            "Avengers",
+            "X-Men",
+            3)
+        moviesQuestionsList.add(movQuestion3)
+
+        val movQuestion4 = Question(4, "Who plays Mary Jane in the movie Spider-Man 3?", "Movies",
+            R.drawable.movies_category_image,
+            "Shailene Woodley",
+            "Kirsten Dunst",
+            "Tara Strong",
+            2)
+        moviesQuestionsList.add(movQuestion4)
+
+        val movQuestion5 = Question(5, "What villain returns from Latveria in 2007's 4: Rise of the Silver Surfer?", "Movies",
+            R.drawable.movies_category_image,
+            "Galactus",
+            "Victor Von Doom",
+            "Annihilus",
+            2)
+        moviesQuestionsList.add(movQuestion5)
+
+        val movQuestion6 = Question(6, "What is the name of the lake where the final scenes of X-Men 2 take place?", "Movies",
+            R.drawable.movies_category_image,
+            "Alkali Lake",
+            "Lake Simcoe",
+            "Lake Athabasca",
+            1)
+        moviesQuestionsList.add(movQuestion6)
+
+        val movQuestion7 = Question(7, "Who was sucked into the portal at the beginning of Hellboy?", "Movies",
+            R.drawable.movies_category_image,
+            "Grigori Rasputin",
+            "Ogdru Jahad",
+            "Hellboy",
+            1)
+        moviesQuestionsList.add(movQuestion7)
+
+        val movQuestion8 = Question(8, "In which back-to-back years did Superman and Batman debut?", "Movies",
+            R.drawable.movies_category_image,
+            "Batman Begins",
+            "Batman Forever",
+            "Batman and Robin",
+            3)
+        moviesQuestionsList.add(movQuestion8)
+
+        Collections.shuffle(moviesQuestionsList)
+        return moviesQuestionsList
+    }
+
+    //Comics Questions
+    fun comicsQuestions(): ArrayList<Question> {
+        val comicsQuestionsList = ArrayList<Question>()
+
+        val comQuestion1 = Question(1, "What superhero grew up on the planet Tamaran?", "Comics",
+            R.drawable.comic_category_image,
+            "The Silver Surfer",
+            "Ultra Boy",
+            "Star Fire",
+            3)
+        comicsQuestionsList.add(comQuestion1)
+
+        val comQuestion2 = Question(2, "Edwin Jarvis serves as butler to what superteam?", "Comics",
+            R.drawable.comic_category_image,
+            "Justice League",
+            "Avengers",
+            "Teen Titans",
+            2)
+        comicsQuestionsList.add(comQuestion2)
+
+        val comQuestion3 = Question(3, "What year was the first modern comic book printed?", "Comics",
+            R.drawable.comic_category_image,
+            "1938",
+            "1917",
+            "1933",
+            3)
+        comicsQuestionsList.add(comQuestion3)
+
+        val movQuestion4 = Question(4, "What superhero gained his powers after being exposed to the Orb of Ra?", "Comics",
+            R.drawable.comic_category_image,
+            "Metamorhpo",
+            "Doctor Strange",
+            "Hawkman",
+            1)
+        comicsQuestionsList.add(movQuestion4)
+
+        val comQuestion5 = Question(5, "Which of the following heroes was NOT a member of the magically powered Sentinels of Magic?", "Comics",
+            R.drawable.comic_category_image,
+            "Doctor Strange",
+            "Raven",
+            "Zatanna",
+            1)
+        comicsQuestionsList.add(comQuestion5)
+
+        val comQuestion6 = Question(6, "What is the best-selling comic book of all time?", "Comics",
+            R.drawable.comic_category_image,
+            "Batman",
+            "X-Men",
+            "Superman",
+            2)
+        comicsQuestionsList.add(comQuestion6)
+
+        val comQuestion7 = Question(7, "What was the first comic book to feature a recurring character?", "Comics",
+            R.drawable.comic_category_image,
+            "Max and Moritz",
+            "Historie De M. Vieux Bois",
+            "Ally Sloper's Half Holiday",
+            3)
+        comicsQuestionsList.add(comQuestion7)
+
+        val comQuestion8 = Question(8, "What was first introduced in Detective Comics #29?", "Comics",
+            R.drawable.comic_category_image,
+            "The Batmobile",
+            "Robin",
+            "Batman’s Utility Belt",
+            3)
+        comicsQuestionsList.add(comQuestion8)
+
+        Collections.shuffle(comicsQuestionsList)
+        return comicsQuestionsList
+    }
+
 }
