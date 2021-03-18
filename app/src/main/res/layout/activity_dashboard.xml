@@ -77,7 +77,7 @@
         android:paddingRight="40dp">
 
         <androidx.cardview.widget.CardView
-            android:layout_width="150dp"
+            android:layout_width="140dp"
             android:layout_height="70dp"
             app:cardBackgroundColor="@color/light_blue"
             android:layout_marginTop="0dp"
@@ -114,7 +114,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="150dp"
+            android:layout_width="140dp"
             android:layout_height="70dp"
             app:cardBackgroundColor="@color/light_blue"
             android:layout_marginTop="0dp"
