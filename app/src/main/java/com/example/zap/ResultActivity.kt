@@ -24,8 +24,9 @@ class ResultActivity : AppCompatActivity() {
 
         val totalQuestions = intent.getIntExtra(Constants.QUESTIONS_TOTAL, 0)
         val correctOptions = intent.getIntExtra(Constants.CORRECT_ANSWERS, 0)
+        val categoryName = intent.getStringExtra(Constants.CATEGORY)
 
-        tv_score.text = "You scored a total of $correctOptions out of $totalQuestions"
+        tv_score.text = "You scored a total of $correctOptions out of $totalQuestions for $categoryName"
 
         btn_finish.setOnClickListener {
             startActivity(Intent(this, DashboardActivity::class.java))

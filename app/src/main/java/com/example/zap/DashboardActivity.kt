@@ -32,10 +32,16 @@ class DashboardActivity : AppCompatActivity() {
         val movies_category = findViewById<CardView>(R.id.movies_category)
         val comics_category = findViewById<CardView>(R.id.comics_category)
 
+        val mCategoryGen = findViewById<TextView>(R.id.general_category_name)
+        val mCategoryHis = findViewById<TextView>(R.id.history_category_name)
+        val mCategoryMov = findViewById<TextView>(R.id.movies_category_name)
+        val mCategoryCom = findViewById<TextView>(R.id.comics_category_name)
+
         //General Category OnClickListener
         general_category.setOnClickListener{
             val intent = Intent(this, GeneralQuizActivity::class.java)
             intent.putExtra(Constants.USERNAME, tv_greeting.text.toString())
+            intent.putExtra(Constants.CATEGORY, mCategoryGen.text.toString())
             startActivity(intent);
         }
 
@@ -43,6 +49,7 @@ class DashboardActivity : AppCompatActivity() {
         history_category.setOnClickListener{
             val intent = Intent(this, HistoryQuizActivity::class.java)
             intent.putExtra(Constants.USERNAME, tv_greeting.text.toString())
+            intent.putExtra(Constants.CATEGORY, mCategoryHis.text.toString())
             startActivity(intent);
         }
 
@@ -50,6 +57,7 @@ class DashboardActivity : AppCompatActivity() {
         movies_category.setOnClickListener{
             val intent = Intent(this, MoviesQuizActivity::class.java)
             intent.putExtra(Constants.USERNAME, tv_greeting.text.toString())
+            intent.putExtra(Constants.CATEGORY, mCategoryMov.text.toString())
             startActivity(intent);
         }
 
@@ -57,6 +65,7 @@ class DashboardActivity : AppCompatActivity() {
         comics_category.setOnClickListener{
             val intent = Intent(this, ComicsQuizActivity::class.java)
             intent.putExtra(Constants.USERNAME, tv_greeting.text.toString())
+            intent.putExtra(Constants.CATEGORY, mCategoryCom.text.toString())
             startActivity(intent);
         }
 

@@ -8,6 +8,7 @@ object Constants {
     const val USERNAME: String = "user_name"
     const val QUESTIONS_TOTAL: String = "questions_total"
     const val CORRECT_ANSWERS: String = "correct_answers"
+    const val CATEGORY: String = "category_name"
 
     //General Questions
     fun generalQuestions(): ArrayList<Question> {

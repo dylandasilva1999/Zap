@@ -70,7 +70,7 @@
                 android:textColor="@color/yellow"
                 android:fontFamily="@font/proxima_nova_bold"
                 android:textSize="22sp"
-                tools:text="You scored a total of 8 out of 10"
+                tools:text="You scored a total of 8 out of 10 for History"
                 />
 
         </androidx.cardview.widget.CardView>

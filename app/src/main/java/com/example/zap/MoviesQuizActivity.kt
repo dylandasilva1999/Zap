@@ -18,6 +18,7 @@ class MoviesQuizActivity : AppCompatActivity(), View.OnClickListener {
     private var mSelectedOptionPosition: Int = 0
     private var mCorrectOptions: Int = 0
     private var mUsername: String? = null
+    private var mCategory: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,6 +28,7 @@ class MoviesQuizActivity : AppCompatActivity(), View.OnClickListener {
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
 
         mUsername = intent.getStringExtra(Constants.USERNAME)
+        mCategory = intent.getStringExtra(Constants.CATEGORY)
 
         //Get the Movies Questions List
         mMoviesQuestionsList = Constants.moviesQuestions()
@@ -131,6 +133,7 @@ class MoviesQuizActivity : AppCompatActivity(), View.OnClickListener {
                         }
                         else -> {
                             val intent = Intent(this, ResultActivity::class.java)
+                            intent.putExtra(Constants.CATEGORY, mCategory)
                             intent.putExtra(Constants.USERNAME, mUsername)
                             intent.putExtra(Constants.CORRECT_ANSWERS, mCorrectOptions)
                             intent.putExtra(Constants.QUESTIONS_TOTAL, mMoviesQuestionsList!!.size)

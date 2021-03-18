@@ -224,6 +224,7 @@
                     android:contentDescription="Dashboard Yellow Shape" />
 
                 <TextView
+                    android:id="@+id/general_category_name"
                     android:text="General"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -260,6 +261,7 @@
                     android:contentDescription="Dashboard Yellow Shape" />
 
                 <TextView
+                    android:id="@+id/history_category_name"
                     android:text="History"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -296,6 +298,7 @@
                     android:contentDescription="Dashboard Yellow Shape" />
 
                 <TextView
+                    android:id="@+id/movies_category_name"
                     android:text="Movies"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -332,6 +335,7 @@
                     android:contentDescription="Dashboard Yellow Shape" />
 
                 <TextView
+                    android:id="@+id/comics_category_name"
                     android:text="Comics"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
