@@ -130,7 +130,7 @@ The `Development Process` is the technical implementations and functionality don
 
 ### Implementation
 
-## Challenges
+#### Challenges
 
 * Learning how to use the different layout for different purposes and how it integrates into Kotlin.
 * Making the application responsive to various screen types was a great learning curve challenge.
@@ -143,7 +143,7 @@ The `Development Process` is the technical implementations and functionality don
 
 The `Peer Reviews` were conducted by my fellow students and lecturer.
 
-## Feedback
+#### Feedback
 
 * The user need to hide the keyboard before they can click the `Start` button.
 * The overall theme is unique, fun and creative.
@@ -151,7 +151,7 @@ The `Peer Reviews` were conducted by my fellow students and lecturer.
 * The navigation flow makes complete sense.
 * Add slogan to the splash screen to give more context to the application.
 
-## Future Changes
+#### Future Changes
 
 * Remove the two `Button` interaction.
 * Add a slogan to the splash screen.
