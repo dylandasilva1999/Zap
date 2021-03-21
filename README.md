@@ -49,6 +49,8 @@
 <!--PROJECT DESCRIPTION-->
 ## About the Project
 
+![image1][image1]
+
 ### Project Description
 
 According to research on the topic "The Psychology Of Why You Love Superheroes" in 2017, alongside further research done at the Kyoto University in Japan "humans are drawn to heroes from early stages of development" and want to challange superhero lovers into some trivia. What is another name for Superman? In which Marvel comic did Elektra make her debut?
@@ -92,14 +94,21 @@ Open `Android Studio` and select `File | Open...` from the menu. Select cloned d
 
 ### Features
 
+![image2][image2]
 * Users can enter and add their name.
 * See the highest score of each category.
+
+![image3][image3]
+
 * Choose from a range of 4 categories.
   - The categories are General, History, Movies and Comics.
+  - Each category has their own themed design.
 * Awnser questions in each category.
   - Test your overall Superhero knowledge.
 * Instant validation when the user selects an answer.
-* Each category has their own themed design.
+
+![image4][image4]
+
 * Results page to display amount of correct answers.
 * Added a custom animation when opening the app.
 
@@ -119,9 +128,15 @@ The `Conceptual Process` is the set of actions, activities and research that was
 
 ### Ideation
 
+![image5][image5]
+
 ### Wireframes
 
+![image6][image6]
+
 ### User-flow
+
+![image7][image7]
 
 <!-- DEVELOPMENT PROCESS -->
 ## Development Process
@@ -200,3 +215,12 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 * [Animations](https://www.youtube.com/watch?v=3DR4DiU_rmw)
 * [Layout](https://www.youtube.com/watch?v=OCceWupZ_Ik)
 * [Code Assist](https://www.youtube.com/watch?v=b21fiIyOW4A)
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[image1]: Images/Image1.png
+[image2]: Images/Image2.png
+[image3]: Images/Image3.png
+[image4]: Images/Image4.png
+[image5]: Images/Image5.png
+[image6]: Images/Image6.png
+[image7]: Images/Image7.png
