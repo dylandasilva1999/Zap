@@ -130,7 +130,32 @@ The `Development Process` is the technical implementations and functionality don
 
 ### Implementation
 
+## Challenges
+
+* Learning how to use the different layout for different purposes and how it integrates into Kotlin.
+* Making the application responsive to various screen types was a great learning curve challenge.
+* User validation when moving from one question to another.
+* Using `SharedPreferences` to store the highest score of each category.
+* Understanding the use of `Activities` as means of navigation and functionality.
+* Making use of `Intents` to transfer data from one activity to another.
+
 ### Peer Reviews
+
+The `Peer Reviews` were conducted by my fellow students and lecturer.
+
+## Feedback
+
+* The user need to hide the keyboard before they can click the `Start` button.
+* The overall theme is unique, fun and creative.
+* Improve the user experience, when the user wants to move onto the next question they have press two `Buttons`, rather consider one `Button`.
+* The navigation flow makes complete sense.
+* Add slogan to the splash screen to give more context to the application.
+
+## Future Changes
+
+* Remove the two `Button` interaction.
+* Add a slogan to the splash screen.
+* Update the enterNameView that the button shows after user typed their name.
 
 <!-- VIDEO DEMONSTRATION -->
 ## Video Demonstration
@@ -175,8 +200,3 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 * [Animations](https://www.youtube.com/watch?v=3DR4DiU_rmw)
 * [Layout](https://www.youtube.com/watch?v=OCceWupZ_Ik)
 * [Code Assist](https://www.youtube.com/watch?v=b21fiIyOW4A)
-
-<!-- MARKDOWN LINKS & IMAGES -->
-[image1]: Images/1.png
-[image2]: Images/2.png
-[image3]: Images/3.png
