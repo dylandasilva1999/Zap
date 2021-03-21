@@ -10,7 +10,7 @@
 <p align="center">
 </br>
    
-  <a href="https://github.com/dylandasilva1999/zap-quiz-app ">
+  <a href="https://github.com/dylandasilva1999/zap-quiz-app">
     <img src="Images/App Icon.png" alt="Logo" width="140" height="140">
   </a>
   
@@ -19,7 +19,6 @@
   <p align="center">
     Superhero Trivia
   </p>
-
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
@@ -30,27 +29,22 @@
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [How to install](#how-to-install)
-* [Unit Testing](#unit-testing)
 * [Features and Functionality](#features-and-functionality)
-   * [Choose Categories](#choose-category)
-   * [Timed Awnsers](#timed-awnsers)
-   * [Leaderboard](#leaderboard)
-   * [Win or Lose](#win-or-lose)
+   * [Features](#features)
+   * [Functionality](#functionality)
 * [Concept Process](#concept-process)
    * [Ideation](#ideation)
    * [Wireframes](#wireframes)
-   * [Leaderboard](#leaderboard)
    * [User-flow](#user-flow)
 * [Development Process](#development-process)
    * [Implementation](#implementation)
    * [Peer Reviews](#peer-reviews)
 * [Video Demonstration](#video-demonstration)
+* [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
-
-
 
 <!--PROJECT DESCRIPTION-->
 ## About the Project
@@ -75,47 +69,76 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-For development, the latest version of Visual Studio is required. The latest version can be downloaded from 
-
-### How to install
- 
 Ensure that you have the latest version of Android Studio installed on your machine. The Kotlin plugin will also be required.
 
-Installation
+### How to install
+
+### Installation
 Here are a couple of ways to clone this repo:
 
-Android Studio
-Android Studio -> File -> New -> From Version Control -> Git
-Enter https://github.com/dylandasilva1999/zap-quiz-app.git into the URL field and press the Clone button.
+1. Android Studio </br>
+`Android Studio` -> `File` -> `New` -> `From Version Control` -> `Git`</br>
+Enter `https://github.com/dylandasilva1999/zap-quiz-app.git` into the URL field and press the `Clone` button.
 
-Command-line + Android Studio
+2. Command-line + Android Studio </br>
 Run the following in the command-line to clone the project:
-
-git clone https://github.com/dylandasilva1999/zap-quiz-app.git
-Open Android Studio and select File | Open... from the menu. Select cloned directory and press Open button
-
-## Unit Testing
-
-The unit tests will be listed here.
+   ```sh
+   git clone https://github.com/dylandasilva1999/zap-quiz-app.git
+   ```
+Open `Android Studio` and select `File | Open...` from the menu. Select cloned directory and press `Open` button
 
 <!-- FEATURES AND FUNCTIONALITY-->
 ## Features and Functionality
 
-### Choose Categories
+### Features
 
-Choose from a variety of categories to trivia.
+* Users can enter and add their name.
+* See the highest score of each category.
+* Choose from a range of 4 categories.
+  - The categories are General, History, Movies and Comics.
+* Awnser questions in each category.
+  - Test your overall Superhero knowledge.
+* Instant validation when the user selects an answer.
+* Each category has their own themed design.
+* Results page to display amount of correct answers.
+* Added a custom animation when opening the app.
 
-### Timed Awnsers
+### Functionality
 
-Choose the correct awnser before the timer runs out.
+* `Relative`, `Linear` and `Grid` layouts were used to create the layouts.
+* Four `Activities` were used to create the different quiz categories.
+* `Progress Bars` are utilised on each category quiz to indicate which question the user is on.
+* A `Constants` file holds all the questions in an `ArrayList`.
+* `SharedPreferences` is used the hold each category's highest scores.
+* `Intents` are used to keep track of the name of the user and the category name that is displayed on the results page.
 
-### Leaderboard
+<!-- CONCEPT PROCESS -->
+## Concept Process
 
-View the leaderboard to see the amount of points you and your friends earned.
+The `Conceptual Process` is the set of actions, activities and research that was done when starting this project.
 
-### Win or Lose
+### Ideation
 
-See who won and who lost the trivia.
+### Wireframes
+
+### User-flow
+
+<!-- DEVELOPMENT PROCESS -->
+## Development Process
+
+The `Development Process` is the technical implementations and functionality done in the backend of the application.
+
+### Implementation
+
+### Peer Reviews
+
+<!-- VIDEO DEMONSTRATION -->
+## Video Demonstration
+
+<!-- ROADMAP -->
+## Roadmap
+
+See the [open issues](https://github.com/dylandasilva1999/zap-quiz-app/issues) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -136,12 +159,22 @@ Contributions are what make the open source community such an amazing place to b
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.\
+
+<!-- LICENSE -->
+## Contact
+
+* **Dylan da Silva** - 190082@virtualwindow.co.za
+* **Project Link** - https://github.com/dylandasilva1999/zap-quiz-app
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* All acknowledgements will be listed here!
+* [Android Documenation](https://developer.android.com/docs)
+* [Flat Icon](https://www.flaticon.com/)
+* [Animations](https://www.youtube.com/watch?v=3DR4DiU_rmw)
+* [Layout](https://www.youtube.com/watch?v=OCceWupZ_Ik)
+* [Code Assist](https://www.youtube.com/watch?v=b21fiIyOW4A)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [image1]: Images/1.png
