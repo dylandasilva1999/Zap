@@ -61,6 +61,7 @@ Zap! is a challenging, fun and interactive trivia quiz game! Zap! will put your 
 
 * [Android Studio](https://developer.android.com/studio)
 * [Kotlin](https://kotlinlang.org/)
+* [GitHub](https://github.com/)
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Android_Studio_icon.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Kotlin-logo.png" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="5%" height="5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
