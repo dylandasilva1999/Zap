@@ -23,11 +23,51 @@ class ResultActivity : AppCompatActivity() {
         val btn_finish = findViewById<Button>(R.id.btn_finish)
 
         val userName = sharedPref.getString(Constants.USERNAME, "User")
+        val editor = sharedPref.edit()
+
         greet_name.text = userName
+
+        val highestScoreGeneral = sharedPref.getInt(Constants.GENERAL_HIGHEST_SCORE, 0)
+        val highestScoreHistory = sharedPref.getInt(Constants.HISTORY_HIGHEST_SCORE, 0)
+        val highestScoreMovies = sharedPref.getInt(Constants.MOVIES_HIGHEST_SCORE, 0)
+        val highestScoreComics = sharedPref.getInt(Constants.COMICS_HIGHEST_SCORE, 0)
 
         val totalQuestions = intent.getIntExtra(Constants.QUESTIONS_TOTAL, 0)
         val correctOptions = intent.getIntExtra(Constants.CORRECT_ANSWERS, 0)
         val categoryName = intent.getStringExtra(Constants.CATEGORY)
+
+        if (categoryName == "General") {
+            if (correctOptions > highestScoreGeneral) {
+                editor.apply {
+                    putInt(Constants.GENERAL_HIGHEST_SCORE, correctOptions)
+                    apply()
+                }
+            }
+        }
+        if (categoryName == "History") {
+            if (correctOptions > highestScoreHistory) {
+                editor.apply {
+                    putInt(Constants.HISTORY_HIGHEST_SCORE, correctOptions)
+                    apply()
+                }
+            }
+        }
+        if (categoryName == "Movies") {
+            if (correctOptions > highestScoreMovies) {
+                editor.apply {
+                    putInt(Constants.MOVIES_HIGHEST_SCORE, correctOptions)
+                    apply()
+                }
+            }
+        }
+        if (categoryName == "Comics") {
+            if (correctOptions > highestScoreComics) {
+                editor.apply {
+                    putInt(Constants.COMICS_HIGHEST_SCORE, correctOptions)
+                    apply()
+                }
+            }
+        }
 
         tv_score.text = "You scored a total of $correctOptions out of $totalQuestions for $categoryName"
 

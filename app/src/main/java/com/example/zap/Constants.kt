@@ -9,6 +9,10 @@ object Constants {
     const val QUESTIONS_TOTAL: String = "questions_total"
     const val CORRECT_ANSWERS: String = "correct_answers"
     const val CATEGORY: String = "category_name"
+    const val GENERAL_HIGHEST_SCORE: String = "general_highest_score"
+    const val HISTORY_HIGHEST_SCORE: String = "history_highest_score"
+    const val MOVIES_HIGHEST_SCORE: String = "movies_highest_score"
+    const val COMICS_HIGHEST_SCORE: String = "comics_highest_score"
 
     //General Questions
     fun generalQuestions(): ArrayList<Question> {
@@ -70,11 +74,11 @@ object Constants {
                 1)
         generalQuestionsList.add(genQuestion7)
 
-        val genQuestion8 = Question(8, "What villain got his distinctive appearance from toxic chemicals at a plant?", "General",
+        val genQuestion8 = Question(8, "What is the name of the microscopic universe Ant-Man travels to when he goes sub-atomic?", "General",
                 R.drawable.general_category_image,
-                "The Joker",
-                "Two-Face",
-                "Doomsday",
+                "Quantum Realm",
+                "Quantum Penillium",
+                "Micro Realm",
                 1)
         generalQuestionsList.add(genQuestion8)
 
@@ -118,7 +122,7 @@ object Constants {
                 3)
         historyQuestionsList.add(hisQuestion4)
 
-        val hisQuestion5 = Question(5, "6 Who made Captain America’s shield?", "History",
+        val hisQuestion5 = Question(5, "Who made Captain America’s shield?", "History",
                 R.drawable.history_category_image,
                 "United States Army",
                 "Howard Stark",

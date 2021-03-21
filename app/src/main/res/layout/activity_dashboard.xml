@@ -156,21 +156,13 @@
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="210dp"
+        android:layout_marginTop="230dp"
         android:rowCount="5"
         android:columnCount="1"
         android:alignmentMode="alignMargins"
         android:columnOrderPreserved="false"
         android:paddingLeft="40dp"
         android:paddingRight="40dp">
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="140dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="20dp"
-            app:cardCornerRadius="16dp"
-            android:elevation="0dp"
-            app:cardBackgroundColor="@color/white">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -198,7 +190,6 @@
                     android:textSize="15sp" />
 
             </LinearLayout>
-        </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/general_category"
@@ -230,6 +221,27 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:layout_marginTop="-32dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/proxima_nova_semibold"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/crown_icon"
+                    android:layout_marginTop="-40dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_gravity="right"
+                    android:contentDescription="Dashboard Yellow Shape" />
+
+                <TextView
+                    android:id="@+id/highest_score_general"
+                    tools:text="8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginTop="-2dp"
+                    android:layout_marginRight="26dp"
                     android:textColor="@color/white"
                     android:fontFamily="@font/proxima_nova_semibold"
                     android:textSize="20sp" />
@@ -271,6 +283,27 @@
                     android:fontFamily="@font/proxima_nova_semibold"
                     android:textSize="20sp" />
 
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/crown_icon"
+                    android:layout_marginTop="-40dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_gravity="right"
+                    android:contentDescription="Dashboard Yellow Shape" />
+
+                <TextView
+                    android:id="@+id/highest_score_history"
+                    tools:text="8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginTop="-2dp"
+                    android:layout_marginRight="26dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/proxima_nova_semibold"
+                    android:textSize="20sp" />
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -308,6 +341,27 @@
                     android:fontFamily="@font/proxima_nova_semibold"
                     android:textSize="20sp" />
 
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/crown_icon"
+                    android:layout_marginTop="-40dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_gravity="right"
+                    android:contentDescription="Dashboard Yellow Shape" />
+
+                <TextView
+                    android:id="@+id/highest_score_movies"
+                    tools:text="8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginTop="-2dp"
+                    android:layout_marginRight="26dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/proxima_nova_semibold"
+                    android:textSize="20sp" />
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -341,6 +395,27 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:layout_marginTop="-32dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/proxima_nova_semibold"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/crown_icon"
+                    android:layout_marginTop="-40dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_gravity="right"
+                    android:contentDescription="Dashboard Yellow Shape" />
+
+                <TextView
+                    android:id="@+id/highest_score_comics"
+                    tools:text="8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginTop="-2dp"
+                    android:layout_marginRight="26dp"
                     android:textColor="@color/white"
                     android:fontFamily="@font/proxima_nova_semibold"
                     android:textSize="20sp" />

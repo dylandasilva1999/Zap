@@ -27,8 +27,26 @@ class DashboardActivity : AppCompatActivity() {
         val userName = sharedPref.getString(Constants.USERNAME, "User")
         val et_name = findViewById<TextView>(R.id.et_name)
 
+        //Text Views for Highest Scores
+        val highest_score_general = findViewById<TextView>(R.id.highest_score_general)
+        val highest_score_history = findViewById<TextView>(R.id.highest_score_history)
+        val highest_score_movies = findViewById<TextView>(R.id.highest_score_movies)
+        val highest_score_comics = findViewById<TextView>(R.id.highest_score_comics)
+
+        //Highest Score Values
+        val highestScoreGeneral = sharedPref.getInt(Constants.GENERAL_HIGHEST_SCORE, 0)
+        val highestScoreHistory = sharedPref.getInt(Constants.HISTORY_HIGHEST_SCORE, 0)
+        val highestScoreMovies = sharedPref.getInt(Constants.MOVIES_HIGHEST_SCORE, 0)
+        val highestScoreComics = sharedPref.getInt(Constants.COMICS_HIGHEST_SCORE, 0)
+
         //Set the Greeting Text
         tv_greeting.text = userName
+
+        //Assign Highest Scores to Text Views
+        highest_score_general.text = highestScoreGeneral.toString()
+        highest_score_history.text = highestScoreHistory.toString()
+        highest_score_movies.text = highestScoreMovies.toString()
+        highest_score_comics.text = highestScoreComics.toString()
 
         //Get the Front end Categories by CardView
         val general_category = findViewById<CardView>(R.id.general_category)
@@ -45,6 +63,7 @@ class DashboardActivity : AppCompatActivity() {
         general_category.setOnClickListener{
             val intent = Intent(this, GeneralQuizActivity::class.java)
             intent.putExtra(Constants.USERNAME, userName)
+            intent.putExtra(Constants.GENERAL_HIGHEST_SCORE, highestScoreGeneral)
             intent.putExtra(Constants.CATEGORY, mCategoryGen.text.toString())
             startActivity(intent);
         }
@@ -53,6 +72,7 @@ class DashboardActivity : AppCompatActivity() {
         history_category.setOnClickListener{
             val intent = Intent(this, HistoryQuizActivity::class.java)
             intent.putExtra(Constants.USERNAME, userName)
+            intent.putExtra(Constants.HISTORY_HIGHEST_SCORE, highestScoreHistory)
             intent.putExtra(Constants.CATEGORY, mCategoryHis.text.toString())
             startActivity(intent);
         }
@@ -61,6 +81,7 @@ class DashboardActivity : AppCompatActivity() {
         movies_category.setOnClickListener{
             val intent = Intent(this, MoviesQuizActivity::class.java)
             intent.putExtra(Constants.USERNAME, userName)
+            intent.putExtra(Constants.MOVIES_HIGHEST_SCORE, highestScoreMovies)
             intent.putExtra(Constants.CATEGORY, mCategoryMov.text.toString())
             startActivity(intent);
         }
@@ -69,6 +90,7 @@ class DashboardActivity : AppCompatActivity() {
         comics_category.setOnClickListener{
             val intent = Intent(this, ComicsQuizActivity::class.java)
             intent.putExtra(Constants.USERNAME, userName)
+            intent.putExtra(Constants.COMICS_HIGHEST_SCORE, highestScoreComics)
             intent.putExtra(Constants.CATEGORY, mCategoryCom.text.toString())
             startActivity(intent);
         }
