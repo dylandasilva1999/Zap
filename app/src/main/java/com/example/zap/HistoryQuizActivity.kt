@@ -113,15 +113,20 @@ class HistoryQuizActivity : AppCompatActivity(), View.OnClickListener {
         var tv_history_option_three = findViewById<TextView>(R.id.tv_history_option_three)
         var btn_are_you_correct = findViewById<Button>(R.id.btn_are_you_correct)
 
+        btn_are_you_correct.setEnabled(false)
+
         when(v?.id) {
             R.id.tv_history_option_one ->{
                 selectedOptionsView(tv_history_option_one, 1)
+                btn_are_you_correct.setEnabled(true)
             }
             R.id.tv_history_option_two ->{
                 selectedOptionsView(tv_history_option_two, 2)
+                btn_are_you_correct.setEnabled(true)
             }
             R.id.tv_history_option_three ->{
                 selectedOptionsView(tv_history_option_three, 3)
+                btn_are_you_correct.setEnabled(true)
             }
             R.id.btn_are_you_correct ->{
                 if(mSelectedOptionPosition == 0) {
@@ -151,8 +156,10 @@ class HistoryQuizActivity : AppCompatActivity(), View.OnClickListener {
                     answerView(question.correctAnswer, R.drawable.correct_selected_option_style)
 
                     if (mCurrentPosition == mHistoryQuestionsList!!.size) {
+                        btn_are_you_correct.setEnabled(true)
                         btn_are_you_correct.text = "Finish"
                     } else {
+                        btn_are_you_correct.setEnabled(true)
                         btn_are_you_correct.text = "Next Question"
                     }
                     mSelectedOptionPosition = 0

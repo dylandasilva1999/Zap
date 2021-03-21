@@ -159,7 +159,8 @@
             android:backgroundTint="@color/light_blue"
             android:padding="10dp"
             android:textSize="16dp"
-            android:fontFamily="@font/proxima_nova_semibold" />
+            android:fontFamily="@font/proxima_nova_semibold"
+            android:enabled="false"/>
 
 
         <FrameLayout
