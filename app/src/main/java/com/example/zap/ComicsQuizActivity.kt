@@ -134,6 +134,9 @@ class ComicsQuizActivity: AppCompatActivity(), View.OnClickListener {
 
                     when {
                         mCurrentPosition <= mComicsQuestionsList!!.size -> {
+                            tv_comics_option_one.setClickable(true)
+                            tv_comics_option_two.setClickable(true)
+                            tv_comics_option_three.setClickable(true)
                             setComicsQuestion()
                         }
                         else -> {
@@ -149,9 +152,15 @@ class ComicsQuizActivity: AppCompatActivity(), View.OnClickListener {
                     val question = mComicsQuestionsList?.get(mCurrentPosition - 1)
 
                     if (question!!.correctAnswer != mSelectedOptionPosition) {
+                        tv_comics_option_one.setClickable(false)
+                        tv_comics_option_two.setClickable(false)
+                        tv_comics_option_three.setClickable(false)
                         answerView(mSelectedOptionPosition, R.drawable.wrong_selected_option_style)
                     } else {
                         mCorrectOptions++
+                        tv_comics_option_one.setClickable(false)
+                        tv_comics_option_two.setClickable(false)
+                        tv_comics_option_three.setClickable(false)
                     }
                     answerView(question.correctAnswer, R.drawable.correct_selected_option_style)
 

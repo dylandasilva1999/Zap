@@ -134,6 +134,9 @@ class HistoryQuizActivity : AppCompatActivity(), View.OnClickListener {
 
                     when {
                         mCurrentPosition <= mHistoryQuestionsList!!.size -> {
+                            tv_history_option_one.setClickable(true)
+                            tv_history_option_two.setClickable(true)
+                            tv_history_option_three.setClickable(true)
                             setHistoryQuestion()
                         }
                         else -> {
@@ -149,9 +152,15 @@ class HistoryQuizActivity : AppCompatActivity(), View.OnClickListener {
                     val question = mHistoryQuestionsList?.get(mCurrentPosition - 1)
 
                     if (question!!.correctAnswer != mSelectedOptionPosition) {
+                        tv_history_option_one.setClickable(false)
+                        tv_history_option_two.setClickable(false)
+                        tv_history_option_three.setClickable(false)
                         answerView(mSelectedOptionPosition, R.drawable.wrong_selected_option_style)
                     } else {
                         mCorrectOptions++
+                        tv_history_option_one.setClickable(false)
+                        tv_history_option_two.setClickable(false)
+                        tv_history_option_three.setClickable(false)
                     }
                     answerView(question.correctAnswer, R.drawable.correct_selected_option_style)
 

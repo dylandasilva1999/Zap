@@ -134,6 +134,9 @@ class MoviesQuizActivity : AppCompatActivity(), View.OnClickListener {
 
                     when {
                         mCurrentPosition <= mMoviesQuestionsList!!.size -> {
+                            tv_movies_option_one.setClickable(true)
+                            tv_movies_option_two.setClickable(true)
+                            tv_movies_option_three.setClickable(true)
                             setMoviesQuestion()
                         }
                         else -> {
@@ -149,9 +152,15 @@ class MoviesQuizActivity : AppCompatActivity(), View.OnClickListener {
                     val question = mMoviesQuestionsList?.get(mCurrentPosition - 1)
 
                     if (question!!.correctAnswer != mSelectedOptionPosition) {
+                        tv_movies_option_one.setClickable(false)
+                        tv_movies_option_two.setClickable(false)
+                        tv_movies_option_three.setClickable(false)
                         answerView(mSelectedOptionPosition, R.drawable.wrong_selected_option_style)
                     } else {
                         mCorrectOptions++
+                        tv_movies_option_one.setClickable(false)
+                        tv_movies_option_two.setClickable(false)
+                        tv_movies_option_three.setClickable(false)
                     }
                     answerView(question.correctAnswer, R.drawable.correct_selected_option_style)
 

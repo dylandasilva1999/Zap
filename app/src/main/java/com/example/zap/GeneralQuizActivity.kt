@@ -134,6 +134,9 @@ class GeneralQuizActivity : AppCompatActivity(), View.OnClickListener {
 
                     when {
                         mCurrentPosition <= mGeneralQuestionsList!!.size -> {
+                            tv_general_option_one.setClickable(true)
+                            tv_general_option_two.setClickable(true)
+                            tv_general_option_three.setClickable(true)
                             setGeneralQuestion()
                         }
                         else -> {
@@ -149,9 +152,15 @@ class GeneralQuizActivity : AppCompatActivity(), View.OnClickListener {
                     val question = mGeneralQuestionsList?.get(mCurrentPosition - 1)
 
                     if (question!!.correctAnswer != mSelectedOptionPosition) {
+                        tv_general_option_one.setClickable(false)
+                        tv_general_option_two.setClickable(false)
+                        tv_general_option_three.setClickable(false)
                         answerView(mSelectedOptionPosition, R.drawable.wrong_selected_option_style)
                     } else {
                         mCorrectOptions++
+                        tv_general_option_one.setClickable(false)
+                        tv_general_option_two.setClickable(false)
+                        tv_general_option_three.setClickable(false)
                     }
                     answerView(question.correctAnswer, R.drawable.correct_selected_option_style)
 
