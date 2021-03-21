@@ -128,9 +128,15 @@ The `Conceptual Process` is the set of actions, activities and research that was
 
 ### Ideation
 
+![image5][image5]
+
 ### Wireframes
 
+![image6][image6]
+
 ### User-flow
+
+![image7][image7]
 
 <!-- DEVELOPMENT PROCESS -->
 ## Development Process
@@ -215,3 +221,6 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 [image2]: Images/Image2.png
 [image3]: Images/Image3.png
 [image4]: Images/Image4.png
+[image5]: Images/Image5.png
+[image6]: Images/Image6.png
+[image7]: Images/Image7.png
