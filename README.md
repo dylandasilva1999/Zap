@@ -25,6 +25,7 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
+* * [Project Description](#project-description)
   * [Built with](#built-with)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
@@ -35,14 +36,26 @@
    * [Timed Awnsers](#timed-awnsers)
    * [Leaderboard](#leaderboard)
    * [Win or Lose](#win-or-lose)
+* [Concept Process](#concept-process)
+   * [Ideation](#ideation)
+   * [Wireframes](#wireframes)
+   * [Leaderboard](#leaderboard)
+   * [User-flow](#user-flow)
+* [Development Process](#development-process)
+   * [Implementation](#implementation)
+   * [Peer Reviews](#peer-reviews)
+* [Video Demonstration](#video-demonstration)
 * [Contributing](#contributing)
 * [License](#license)
+* [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
 
 
 <!--PROJECT DESCRIPTION-->
 ## About the Project
+
+### Project Description
 
 According to research on the topic "The Psychology Of Why You Love Superheroes" in 2017, alongside further research done at the Kyoto University in Japan "humans are drawn to heroes from early stages of development" and want to challange superhero lovers into some trivia. What is another name for Superman? In which Marvel comic did Elektra make her debut?
 
@@ -66,13 +79,20 @@ For development, the latest version of Visual Studio is required. The latest ver
 
 ### How to install
  
-1. Clone the repo
-```sh
-git clone https://github.com/dylandasilva1999/zap-quiz-app.git
-```
-2. Open the project
+Ensure that you have the latest version of Android Studio installed on your machine. The Kotlin plugin will also be required.
 
-Use `Open Workspace` in Visual Studio.
+Installation
+Here are a couple of ways to clone this repo:
+
+Android Studio
+Android Studio -> File -> New -> From Version Control -> Git
+Enter https://github.com/dylandasilva1999/zap-quiz-app.git into the URL field and press the Clone button.
+
+Command-line + Android Studio
+Run the following in the command-line to clone the project:
+
+git clone https://github.com/dylandasilva1999/zap-quiz-app.git
+Open Android Studio and select File | Open... from the menu. Select cloned directory and press Open button
 
 ## Unit Testing
 
