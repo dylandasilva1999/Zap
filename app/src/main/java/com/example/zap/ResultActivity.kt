@@ -1,5 +1,6 @@
 package com.example.zap
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -15,11 +16,13 @@ class ResultActivity : AppCompatActivity() {
         //Make the View FullScreen
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
 
+        val sharedPref = getSharedPreferences("myPref", Context.MODE_PRIVATE)
+
         val greet_name = findViewById<TextView>(R.id.greet_name)
         val tv_score = findViewById<TextView>(R.id.tv_score)
         val btn_finish = findViewById<Button>(R.id.btn_finish)
 
-        val userName = intent.getStringExtra(Constants.USERNAME)
+        val userName = sharedPref.getString(Constants.USERNAME, "User")
         greet_name.text = userName
 
         val totalQuestions = intent.getIntExtra(Constants.QUESTIONS_TOTAL, 0)
@@ -29,7 +32,7 @@ class ResultActivity : AppCompatActivity() {
         tv_score.text = "You scored a total of $correctOptions out of $totalQuestions for $categoryName"
 
         btn_finish.setOnClickListener {
-            startActivity(Intent(this, DashboardActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
         }
 
     }

@@ -1,5 +1,6 @@
 package com.example.zap
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -16,11 +17,14 @@ class DashboardActivity : AppCompatActivity() {
         //Make the View FullScreen
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
 
+        val sharedPref = getSharedPreferences("myPref", Context.MODE_PRIVATE)
+        val editor = sharedPref.edit()
+
         //Get TextView in Frontend
         val tv_greeting = findViewById<TextView>(R.id.greet_name)
 
         //Get the Intent with the name from Activity Main
-        val userName = intent.getStringExtra(EXTRA_MESSAGE)
+        val userName = sharedPref.getString(Constants.USERNAME, "User")
         val et_name = findViewById<TextView>(R.id.et_name)
 
         //Set the Greeting Text
@@ -40,7 +44,7 @@ class DashboardActivity : AppCompatActivity() {
         //General Category OnClickListener
         general_category.setOnClickListener{
             val intent = Intent(this, GeneralQuizActivity::class.java)
-            intent.putExtra(Constants.USERNAME, tv_greeting.text.toString())
+            intent.putExtra(Constants.USERNAME, userName)
             intent.putExtra(Constants.CATEGORY, mCategoryGen.text.toString())
             startActivity(intent);
         }
@@ -48,7 +52,7 @@ class DashboardActivity : AppCompatActivity() {
         //History Category OnClickListener
         history_category.setOnClickListener{
             val intent = Intent(this, HistoryQuizActivity::class.java)
-            intent.putExtra(Constants.USERNAME, tv_greeting.text.toString())
+            intent.putExtra(Constants.USERNAME, userName)
             intent.putExtra(Constants.CATEGORY, mCategoryHis.text.toString())
             startActivity(intent);
         }
@@ -56,7 +60,7 @@ class DashboardActivity : AppCompatActivity() {
         //Movies Category OnClickListener
         movies_category.setOnClickListener{
             val intent = Intent(this, MoviesQuizActivity::class.java)
-            intent.putExtra(Constants.USERNAME, tv_greeting.text.toString())
+            intent.putExtra(Constants.USERNAME, userName)
             intent.putExtra(Constants.CATEGORY, mCategoryMov.text.toString())
             startActivity(intent);
         }
@@ -64,7 +68,7 @@ class DashboardActivity : AppCompatActivity() {
         //Comics Category OnClickListener
         comics_category.setOnClickListener{
             val intent = Intent(this, ComicsQuizActivity::class.java)
-            intent.putExtra(Constants.USERNAME, tv_greeting.text.toString())
+            intent.putExtra(Constants.USERNAME, userName)
             intent.putExtra(Constants.CATEGORY, mCategoryCom.text.toString())
             startActivity(intent);
         }

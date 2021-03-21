@@ -1,5 +1,6 @@
 package com.example.zap
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -26,9 +27,16 @@ class MainActivity : AppCompatActivity() {
             if(et_name.text.toString().isEmpty()) {
                 Toast.makeText(this, "Please enter your name", Toast.LENGTH_SHORT).show()
             } else {
-                val intent = Intent(this, DashboardActivity::class.java).apply {
-                    putExtra(EXTRA_MESSAGE, et_name.text.toString())
+                val sharedPref = getSharedPreferences("myPref", Context.MODE_PRIVATE)
+                val editor = sharedPref.edit()
+
+                val intent = Intent(this, DashboardActivity::class.java)
+
+                editor.apply{
+                    putString(Constants.USERNAME, et_name.text.toString())
+                    apply()
                 }
+
                 startActivity(intent)
                 finish()
             }
