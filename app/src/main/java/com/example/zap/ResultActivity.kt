@@ -72,7 +72,7 @@ class ResultActivity : AppCompatActivity() {
         tv_score.text = "You scored a total of $correctOptions out of $totalQuestions for $categoryName"
 
         btn_finish.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, DashboardActivity::class.java))
         }
 
     }
