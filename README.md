@@ -238,6 +238,7 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 * [Animations](https://www.youtube.com/watch?v=3DR4DiU_rmw)
 * [Layout](https://www.youtube.com/watch?v=OCceWupZ_Ik)
 * [Code Assist](https://www.youtube.com/watch?v=b21fiIyOW4A)
+* [Article](https://www.bustle.com/p/why-we-love-superheroes-according-to-psychology-49470)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [image1]: Images/Image1.png
