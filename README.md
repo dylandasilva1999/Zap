@@ -194,7 +194,7 @@ The `Peer Reviews` were conducted by my fellow students and lecturer.
 
 To see a run through of the application, click below:
 
-[View Demo](https://youtu.be/OD3Wk6U-JDA)
+[View Demo](https://www.youtube.com/watch?v=PSTrqRYJ69s)
 
 <!-- ROADMAP -->
 ## Roadmap
