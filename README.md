@@ -172,6 +172,7 @@ The `Peer Reviews` were conducted by my fellow students and lecturer.
 * Remove the two `Button` interaction.
 * Add a slogan to the splash screen.
 * Update the enterNameView that the button shows after user typed their name.
+* Add sound effects to results screen.
 
 <!-- VIDEO DEMONSTRATION -->
 ## Video Demonstration
