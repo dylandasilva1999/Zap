@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".GeneralQuizActivity"
     android:fillViewport="true"
-    android:background="@color/red">
+    android:background="@color/red"
+    android:id="@+id/result_view">
 
     <LinearLayout
         android:layout_width="match_parent"
