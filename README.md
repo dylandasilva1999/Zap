@@ -189,8 +189,6 @@ The `Peer Reviews` were conducted by my fellow students and lecturer.
 
 ![image9][image9]
 
-![image10][image10]
-
 <!-- VIDEO DEMONSTRATION -->
 ## Video Demonstration
 
