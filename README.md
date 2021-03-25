@@ -250,4 +250,3 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 [image7]: Images/Image7.png
 [image8]: Images/Image8.jpg
 [image9]: Images/Image9.jpg
-[image10]: Images/Image10.jpg
