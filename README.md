@@ -62,7 +62,7 @@
 
 According to research on the topic "The Psychology Of Why You Love Superheroes" in 2017, alongside further research done at the Kyoto University in Japan "humans are drawn to heroes from early stages of development" and I want to challenge superhero lovers into some trivia. What is another name for Superman? In which Marvel comic did Elektra make her debut?
 
-Zap! is a challenging, fun and interactive trivia quiz game! Zap! will put your superhero knownledge to the test and educate you on interesting history, comic, movies and general superhero trivia.
+Zap! is a challenging, fun and interactive trivia quiz game! Zap! will put your superhero knowledge to the test and educate you on interesting history, comics, movies and general superhero trivia.
 
 ### Built With
 
