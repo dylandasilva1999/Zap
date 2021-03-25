@@ -46,6 +46,7 @@
 * [Development Process](#development-process)
    * [Implementation](#implementation)
    * [Peer Reviews](#peer-reviews)
+* [Mockups](#mockups)
 * [Video Demonstration](#video-demonstration)
 * [Roadmap](#roadmap)
 * [Contributing](#contributing)
@@ -181,6 +182,15 @@ The `Peer Reviews` were conducted by my fellow students and lecturer.
 * Update the enterNameView that the button shows after user typed their name.
 * Add sound effects to results screen.
 
+<!-- MOCKUPS -->
+## Mockups
+
+![image8][image8]
+
+![image9][image9]
+
+![image10][image10]
+
 <!-- VIDEO DEMONSTRATION -->
 ## Video Demonstration
 
@@ -237,3 +247,6 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 [image5]: Images/Image5.png
 [image6]: Images/Image6.png
 [image7]: Images/Image7.png
+[image8]: Images/Image8.jpg
+[image9]: Images/Image9.jpg
+[image10]: Images/Image10.jpg
