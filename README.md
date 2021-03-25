@@ -18,6 +18,13 @@
 
   <p align="center">
     Superhero Trivia
+   <br />
+   <br />
+   <a href="https://www.youtube.com/watch?v=PSTrqRYJ69s">View Demo</a>
+    ·
+    <a href="https://github.com/dylandasilva1999/zap-quiz-app/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/dylandasilva1999/zap-quiz-app/issues">Request Feature</a>
   </p>
 
 <!-- TABLE OF CONTENTS -->
@@ -176,6 +183,10 @@ The `Peer Reviews` were conducted by my fellow students and lecturer.
 
 <!-- VIDEO DEMONSTRATION -->
 ## Video Demonstration
+
+To see a run through of the application, click below:
+
+[View Demo](https://youtu.be/OD3Wk6U-JDA)
 
 <!-- ROADMAP -->
 ## Roadmap
