@@ -61,7 +61,7 @@
 
 ### Project Description
 
-According to research on the topic "The Psychology Of Why You Love Superheroes" in 2017, alongside further research done at the Kyoto University in Japan "humans are drawn to heroes from early stages of development" and I want to challenge superhero lovers into some trivia. What is another name for Superman? In which Marvel comic did Elektra make her debut?
+According to research on the topic "The Psychology Of Why You Love Superheroes" in 2017, alongside further research done at the Kyoto University in Japan, "humans are drawn to heroes from early stages of development" and I want to challenge superhero lovers into some trivia. What is another name for Superman? In which Marvel comic did Elektra make her debut?
 
 Zap! is a challenging, fun and interactive trivia quiz game! Zap! will put your superhero knowledge to the test and educate you on interesting history, comics, movies and general superhero trivia.
 
@@ -111,14 +111,14 @@ Open `Android Studio` and select `File | Open...` from the menu. Select cloned d
 
 * Choose from a range of 4 categories.
   - The categories are General, History, Movies and Comics.
-  - Each category has their own themed design.
-* Awnser questions in each category.
+  - Each category has its own themed design.
+* Answer questions in each category.
   - Test your overall Superhero knowledge.
 * Instant validation when the user selects an answer.
 
 ![image4][image4]
 
-* Results page to display amount of correct answers.
+* Results page to display the number of correct answers.
 * Added a custom animation when opening the app.
 
 ### Functionality
@@ -169,9 +169,9 @@ The `Peer Reviews` were conducted by my fellow students and lecturer.
 
 #### Feedback
 
-* The user need to hide the keyboard before they can click the `Start` button.
+* The user needs to hide the keyboard before they can click the `Start` button.
 * The overall theme is unique, fun and creative.
-* Improve the user experience, when the user wants to move onto the next question they have press two `Buttons`, rather consider one `Button`.
+* Improve the user experience, when the user wants to move onto the next question they have to press two `Buttons`, rather consider one `Button`.
 * The navigation flow makes complete sense.
 * Add slogan to the splash screen to give more context to the application.
 
@@ -179,8 +179,8 @@ The `Peer Reviews` were conducted by my fellow students and lecturer.
 
 * Remove the two `Button` interaction.
 * Add a slogan to the splash screen.
-* Update the enterNameView that the button shows after user typed their name.
-* Add sound effects to results screen.
+* Update the enterNameView that the button shows after the user typed their name.
+* Add sound effects to the results screen.
 
 <!-- MOCKUPS -->
 ## Mockups
@@ -204,7 +204,7 @@ See the [open issues](https://github.com/dylandasilva1999/zap-quiz-app/issues) f
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what makes the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -237,6 +237,7 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 * [Layout](https://www.youtube.com/watch?v=OCceWupZ_Ik)
 * [Code Assist](https://www.youtube.com/watch?v=b21fiIyOW4A)
 * [Article](https://www.bustle.com/p/why-we-love-superheroes-according-to-psychology-49470)
+* [My lecturer Armand Pretorius](https://github.com/ArmandPretorius)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [image1]: Images/Image1.png
